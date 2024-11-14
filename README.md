@@ -1,6 +1,6 @@
 # SignHope - American Sign Language (ASL) Recognition App
 
-**SignHope** is an innovative Android mobile application designed to bridge the communication gap between the hearing-impaired and non-hearing-impaired communities. Using machine learning, the app recognizes American Sign Language (ASL) gestures through the mobile camera, converting them into text and speech for easy communication.
+**SignHope** is an innovative Android mobile application designed to bridge the communication gap between the hearing-impaired and non-hearing-impaired communities. Using machine learning, the app recognizes American Sign Language (ASL) gestures through the mobile camera, converting them into text for easy communication.
 
 ## 🚀 Features
 
