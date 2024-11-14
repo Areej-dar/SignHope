@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/b10"
+    android:padding="16dp">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvPrediction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text="Prediction: "
+        android:textSize="30sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnTakeVideo"
+            android:layout_width="262dp"
+            android:layout_height="wrap_content"
+            android:text="Take Video" />
+
+        <Button
+            android:id="@+id/btnPickVideo"
+            android:layout_width="266dp"
+            android:layout_height="wrap_content"
+            android:text="Pick Video" />
+
+        <Button
+            android:id="@+id/btnDetectVideo"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:text="Detect Video" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

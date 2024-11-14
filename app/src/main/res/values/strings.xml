@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">SignHope</string>
+    <string name="default_web_client_id">1068627840541-osvhisn9rgehcfrpi367em79v8hfcrjs.apps.googleusercontent.com</string>
+    <string name="pictionary_1_description">Alphabets</string>
+    <string name="pictionary_2_description">Numbers</string>
+    <string name="pictionary_3_description">Times of Day</string>
+    <string name="pictionary_4_description">Basic Signs</string>
+    <string name="pictionary_5_description">Daily Signs</string>
+    <string name="pictionary_6_description">Common Signs</string>
+    <string name="pictionary_7_description">Question Signs</string>
+    <string name="gesture_1_description">Hello gesture</string>
+    <string name="gesture_2_description">Good morning gesture</string>
+    <string name="gesture_3_description">How are you today? gesture</string>
+    <string name="gesture_4_description">Its nice to meet you gesture</string>
+    <string name="gesture_5_description">Whats your name? gesture</string>
+    <string name="gesture_6_description">Breakfast foods gesture</string>
+    <string name="gesture_7_description">Eat food gesture</string>
+    <string name="gesture_8_description">Favorite food what? gesture</string>
+    <string name="gesture_9_description">I am hungry gesture</string>
+    <string name="gesture_10_description">I want to drink water gesture</string>
+    <string name="gesture_11_description">Emotions gesture</string>
+    <string name="gesture_12_description">Time of the Day gesture</string>
+    <string name="gesture_13_description">Months</string>
+    <string name="gesture_14_description">Family</string>
+    <string name="facebook_app_id">968866184575207</string>
+    <string name="fb_login_protocol_scheme">fb968866184575207</string>
+    <string name="facebook_client_token">2b2464493eda58b9c53715fa8e339a5b</string>
+    <string name="detect_alphabets">Detect Alphabets</string>
+    <string name="classified_as">Classified as:</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="logout">Logout</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
+    <string name="logout_1">Logout</string>
+    <string name="dashboard_1">Dashboard</string>
+    <string name="welcome_to_signhope_1">Welcome to SignHope!</string>
+
+    <string name="detect_video">Detect Video</string>
+    <string name="take_video">Take Video</string>
+    <string name="pickvideo">Pick Video</string>
+    <string name="start_capture">Start Capture</string>
+    <string name="stop_capture">Stop Capture</string>
+
+
+
+
+</resources>

@@ -1,0 +1,345 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Blue layout with text -->
+    <RelativeLayout
+        android:id="@+id/blueLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="3"
+        android:background="#AAC6FC">
+
+        <TextView
+            android:id="@+id/pictionaryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Pictionary"
+            android:layout_marginLeft="120dp"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+
+        <!-- Horizontal scroll view with buttons -->
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/alphabetsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#AAC6FC"
+                    app:backgroundTint="#AAC6FC"
+                    android:text="Alphabets"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="25dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="0dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:autoLink="web" />
+
+                <TextView
+                android:id="@+id/numbersText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#AAC6FC"
+                app:backgroundTint="#AAC6FC"
+                android:text="Numbers"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="0dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:autoLink="web" />
+
+                <TextView
+                    android:id="@+id/timeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#AAC6FC"
+                    app:backgroundTint="#AAC6FC"
+                    android:text="Times of Day"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="25dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="0dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:autoLink="web" />
+
+                <TextView
+                    android:id="@+id/basicText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#AAC6FC"
+                    app:backgroundTint="#AAC6FC"
+                    android:text="Basic Signs"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="25dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="0dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:autoLink="web" />
+
+                <TextView
+                    android:id="@+id/dailyText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#AAC6FC"
+                    app:backgroundTint="#AAC6FC"
+                    android:text="Daily Signs"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="25dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="0dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:autoLink="web" />
+
+                <TextView
+                    android:id="@+id/commonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#AAC6FC"
+                    app:backgroundTint="#AAC6FC"
+                    android:text="Common Signs"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="25dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="0dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:autoLink="web" />
+
+                <TextView
+                    android:id="@+id/questionText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#AAC6FC"
+                    app:backgroundTint="#AAC6FC"
+                    android:text="Question Signs"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="25dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:autoLink="web" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </RelativeLayout>
+
+    <!-- ConstraintLayout containing the ScrollView -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_below="@id/blueLayout">
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/alphabetsText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alphabets"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:layout_marginTop="12dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageButton
+                    android:id="@+id/pictionary_1"
+                    android:padding="10dp"
+                    android:background="@drawable/rounded_border"
+                    android:foreground="@drawable/image_button_selector"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="390dp"
+                    android:layout_height="290dp"
+                    android:src="@drawable/alphabets"
+                    android:contentDescription="@string/pictionary_1_description"/>
+
+                <TextView
+                    android:id="@+id/numbersText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Numbers"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:layout_marginTop="12dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageButton
+                    android:id="@+id/pictionary_2"
+                    android:padding="10dp"
+                    android:background="@drawable/rounded_border"
+                    android:foreground="@drawable/image_button_selector"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="390dp"
+                    android:layout_height="290dp"
+                    android:src="@drawable/numbers"
+                    android:contentDescription="@string/pictionary_2_description"/>
+
+                <TextView
+                    android:id="@+id/timeText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Times of Day"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:layout_marginTop="12dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageButton
+                    android:id="@+id/pictionary_3"
+                    android:padding="10dp"
+                    android:background="@drawable/rounded_border"
+                    android:foreground="@drawable/image_button_selector"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="390dp"
+                    android:layout_height="290dp"
+                    android:src="@drawable/timesofdaycard"
+                    android:contentDescription="@string/pictionary_2_description"/>
+
+                <TextView
+                    android:id="@+id/basicText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Basic Signs"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:layout_marginTop="12dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageButton
+                    android:id="@+id/pictionary_4"
+                    android:padding="10dp"
+                    android:background="@drawable/rounded_border"
+                    android:foreground="@drawable/image_button_selector"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="390dp"
+                    android:layout_height="290dp"
+                    android:src="@drawable/basicsignscard"
+                    android:contentDescription="@string/pictionary_2_description"/>
+
+                <TextView
+                    android:id="@+id/dailyText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daily Signs"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:layout_marginTop="12dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageButton
+                    android:id="@+id/pictionary_5"
+                    android:padding="10dp"
+                    android:background="@drawable/rounded_border"
+                    android:foreground="@drawable/image_button_selector"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="390dp"
+                    android:layout_height="290dp"
+                    android:src="@drawable/dailysignscard"
+                    android:contentDescription="@string/pictionary_2_description"/>
+
+                <TextView
+                    android:id="@+id/commonText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Common Signs"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:layout_marginTop="12dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageButton
+                    android:id="@+id/pictionary_6"
+                    android:padding="10dp"
+                    android:background="@drawable/rounded_border"
+                    android:foreground="@drawable/image_button_selector"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="390dp"
+                    android:layout_height="290dp"
+                    android:src="@drawable/commonsignscard"
+                    android:contentDescription="@string/pictionary_2_description"/>
+
+                <TextView
+                    android:id="@+id/questionText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Question Signs"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:layout_marginTop="12dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageButton
+                    android:id="@+id/pictionary_7"
+                    android:padding="10dp"
+                    android:background="@drawable/rounded_border"
+                    android:foreground="@drawable/image_button_selector"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="390dp"
+                    android:layout_height="290dp"
+                    android:src="@drawable/questionsignscard"
+                    android:contentDescription="@string/pictionary_2_description"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

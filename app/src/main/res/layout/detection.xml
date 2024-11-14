@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg7">
+
+    <!-- CardView 1: Walking -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardWalking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cardBoating"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RelativeLayout
+            android:layout_width="315dp"
+            android:layout_height="307dp">
+
+            <ImageView
+                android:id="@+id/imageViewWalking"
+                android:layout_width="304dp"
+                android:layout_height="225dp"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/alpha" />
+
+            <TextView
+                android:id="@+id/textViewWalking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewWalking"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="31dp"
+                android:gravity="center"
+                android:text="Translate Alphabets"
+                android:textSize="24sp"
+                app:fontFamily="cursive" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView 2: Boating -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardBoating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        android:clickable="true"
+        app:layout_constraintTop_toBottomOf="@+id/cardWalking"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"><!-- Add marginTop here to create a gap -->
+
+        <RelativeLayout
+            android:layout_width="315dp"
+            android:layout_height="307dp">
+
+            <ImageView
+                android:id="@+id/imageViewBoating"
+                android:layout_width="304dp"
+                android:layout_height="225dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/words" />
+
+            <TextView
+                android:id="@+id/textViewBoating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewBoating"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="31dp"
+                android:gravity="center"
+                android:text="Translate Words"
+                android:textSize="24sp"
+                app:fontFamily="cursive" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

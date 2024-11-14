@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/button_Back1"
+        android:layout_width="43dp"
+        android:layout_height="49dp"
+        android:layout_gravity="start"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:padding="8dp"
+        android:src="@drawable/arrow_back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your details"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="8dp"/>
+
+    <EditText
+        android:id="@+id/enter_username"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_marginBottom="10dp"
+        android:inputType="text"
+        android:padding="18dp"/>
+
+    <TextView
+        android:id="@+id/register_warning_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:textSize="12sp"
+        android:visibility="gone"
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/enter_email1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Address"
+        android:layout_marginBottom="10dp"
+        android:inputType="textEmailAddress"
+        android:padding="18dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <EditText
+            android:id="@+id/enter_password1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_marginBottom="10dp"
+            android:inputType="textPassword"
+            android:padding="18dp" />
+
+        <TextView
+            android:id="@+id/register_show_password_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/enter_password1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="-1dp"
+            android:clickable="true"
+            android:onClick="onShowPasswordClicked"
+            android:padding="8dp"
+            android:text="Show password"
+            android:textColor="#757575" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/register_warning_password_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:textSize="12sp"
+        android:visibility="gone"
+        android:padding="8dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <EditText
+            android:id="@+id/register_confirm_password_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:layout_marginBottom="15dp"
+            android:inputType="textPassword"
+            android:padding="18dp" />
+
+        <TextView
+            android:id="@+id/textShowPassword_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/register_confirm_password_"
+            android:layout_alignParentEnd="true"
+            android:text="Show Password"
+            android:textColor="#757575"
+            android:onClick="onShowConfirmPasswordClicked"
+            android:clickable="true"
+            android:padding="8dp" />
+    </RelativeLayout>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:textSize="12sp"
+        android:visibility="gone"
+        android:padding="8dp"/>
+
+    <Button
+        android:id="@+id/continue_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        app:backgroundTint="#657CD5"
+        android:background="@drawable/rounded_corners_foursides"/>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+            <certificates src="user" />
+        </trust-anchors>
+        <domain includeSubdomains="true">10.4.19.228</domain>
+        <domain includeSubdomains="true">192.168.215.191</domain>
+        <domain includeSubdomains="true">10.4.20.158</domain>
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">10.4.73.128</domain>
+
+    </domain-config>
+</network-security-config>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Welcome!"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/signupText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcomeText"
+        android:text="Sign up to continue!"
+        android:textSize="27sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/googleButton_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign up with Google"
+        android:textColor="@android:color/black"
+        android:background="@drawable/rounded_corners_foursides"
+        android:layout_below="@+id/signupText"
+        app:backgroundTint="#C1C2B8"
+        android:layout_marginTop="60dp"
+        android:textAllCaps="false"
+        android:drawableLeft="@drawable/google_signup"/>
+
+    <TextView
+        android:id="@+id/orText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/googleButton_signup"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/emailButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign up with Email"
+        android:textColor="@android:color/black"
+        app:backgroundTint="#C1C2B8"
+        android:textAllCaps="false"
+        android:background="@drawable/rounded_corners_foursides"
+        android:layout_below="@+id/orText"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/termsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailButton"
+        android:text="By signing up you agree to our *Terms &amp; \n      Conditions* and *Privacy Policy*"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/accountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/termsText"
+        android:text="Already have an account?"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp" />
+
+    <Button
+        android:id="@+id/goto_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/accountText"
+        android:text="Sign in"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_700"
+        android:background="@android:color/transparent"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

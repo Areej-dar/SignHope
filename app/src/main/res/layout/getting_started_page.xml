@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AAC6FC" />
+
+    <ImageView
+        android:id="@+id/get_strtd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/getting_started"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/get_started_btn"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Let's Get Started!"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="310dp"
+        app:backgroundTint="#657CD5"
+        android:background="@drawable/rounded_corners_foursides" />
+
+</FrameLayout>

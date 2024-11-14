@@ -1,0 +1,557 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Blue layout with text -->
+    <RelativeLayout
+        android:id="@+id/blueLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="3"
+        android:background="#AAC6FC">
+
+        <!-- Video Tutorials text -->
+        <TextView
+            android:id="@+id/videoTutorialsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Video Tutorials"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- Learn with SignHope text -->
+        <TextView
+            android:id="@+id/learnWithSignHopeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/videoTutorialsText"
+            android:layout_marginTop="5dp"
+            android:text="Learn with SignHope!"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <!-- Horizontal scroll view with buttons -->
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/learnWithSignHopeText"
+            android:layout_marginTop="10dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/greetingsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Greetings"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="0dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:autoLink="web" />
+
+                <TextView
+                    android:id="@+id/foodText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#AAC6FC"
+                    app:backgroundTint="#AAC6FC"
+                    android:text="Food"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="0dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:autoLink="web" />
+
+                <TextView
+                    android:id="@+id/emotionsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#AAC6FC"
+                    app:backgroundTint="#AAC6FC"
+                    android:text="Emotions"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="0dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:autoLink="web" />
+
+                <TextView
+                    android:id="@+id/timeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#AAC6FC"
+                    app:backgroundTint="#AAC6FC"
+                    android:text="Time"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="0dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:autoLink="web" />
+
+                <TextView
+                android:id="@+id/monthsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#AAC6FC"
+                app:backgroundTint="#AAC6FC"
+                android:text="Months"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="0dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:autoLink="web" />
+
+                <TextView
+                    android:id="@+id/familyText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#AAC6FC"
+                    app:backgroundTint="#AAC6FC"
+                    android:text="Family"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:autoLink="web" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </RelativeLayout>
+
+    <!-- ConstraintLayout containing the ScrollView -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_below="@id/blueLayout">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/greetingsText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Greetings:"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:layout_marginTop="3dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageButton
+                    android:id="@+id/gesture_1"
+                    android:padding="10dp"
+                    android:background="@drawable/rounded_border"
+                    android:foreground="@drawable/image_button_selector"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="390dp"
+                    android:layout_height="290dp"
+                    android:src="@drawable/hello"
+                    android:contentDescription="@string/gesture_1_description"/>
+
+                <TextView
+                    android:id="@+id/helloText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="9dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageButton
+                    android:id="@+id/gesture_2"
+                    android:padding="10dp"
+                    android:background="@drawable/rounded_border"
+                    android:foreground="@drawable/image_button_selector"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="400dp"
+                    android:layout_height="290dp"
+                    android:src="@drawable/goodmorning"
+                    android:contentDescription="@string/gesture_2_description"/>
+
+                <TextView
+                    android:id="@+id/good_morning_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Good Morning"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="9dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageButton
+                    android:id="@+id/gesture_3"
+                    android:padding="10dp"
+                    android:background="@drawable/rounded_border"
+                    android:foreground="@drawable/image_button_selector"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="390dp"
+                    android:layout_height="290dp"
+                    android:src="@drawable/how_are_you_today"
+                    android:contentDescription="@string/gesture_3_description"/>
+
+                <TextView
+                    android:id="@+id/how_are_you_today_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="How are you today?"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="9dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageButton
+                    android:id="@+id/gesture_4"
+                    android:padding="10dp"
+                    android:background="@drawable/rounded_border"
+                    android:foreground="@drawable/image_button_selector"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="400dp"
+                    android:layout_height="290dp"
+                    android:src="@drawable/nice_to_meet_you"
+                    android:contentDescription="@string/gesture_4_description"/>
+
+                <TextView
+                    android:id="@+id/nice_to_meet_you_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="It's nice to meet you!"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="9dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageButton
+                    android:id="@+id/gesture_5"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/rounded_border"
+                    android:foreground="@drawable/image_button_selector"
+                    android:layout_width="400dp"
+                    android:layout_height="290dp"
+                    android:src="@drawable/whats_your_name"
+                    android:contentDescription="@string/gesture_5_description"/>
+
+                <TextView
+                    android:id="@+id/whats_your_name_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What's your name?"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="9dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/foodText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Food:"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageButton
+                    android:id="@+id/gesture_6"
+                    android:padding="10dp"
+                    android:background="@drawable/rounded_border"
+                    android:foreground="@drawable/image_button_selector"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="400dp"
+                    android:layout_height="290dp"
+                    android:src="@drawable/breakfast_foods"
+                    android:contentDescription="@string/gesture_6_description"/>
+
+                <TextView
+                    android:id="@+id/breakfast_foodsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Breakfast foods"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="9dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageButton
+                    android:id="@+id/gesture_7"
+                    android:padding="10dp"
+                    android:background="@drawable/rounded_border"
+                    android:foreground="@drawable/image_button_selector"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="400dp"
+                    android:layout_height="290dp"
+                    android:src="@drawable/eat_food"
+                    android:contentDescription="@string/gesture_7_description"/>
+
+                <TextView
+                    android:id="@+id/eat_foodText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eat Food!"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="9dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageButton
+                    android:id="@+id/gesture_8"
+                    android:padding="10dp"
+                    android:background="@drawable/rounded_border"
+                    android:foreground="@drawable/image_button_selector"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="400dp"
+                    android:layout_height="290dp"
+                    android:src="@drawable/favorite_food_what"
+                    android:contentDescription="@string/gesture_8_description"/>
+
+                <TextView
+                    android:id="@+id/fav_food_what_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your favourite food what?"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="9dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageButton
+                    android:id="@+id/gesture_9"
+                    android:padding="10dp"
+                    android:background="@drawable/rounded_border"
+                    android:foreground="@drawable/image_button_selector"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="400dp"
+                    android:layout_height="290dp"
+                    android:src="@drawable/i_am_hungry"
+                    android:contentDescription="@string/gesture_9_description"/>
+
+                <TextView
+                    android:id="@+id/i_am_hungry_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I am hungry!"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="9dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageButton
+                    android:id="@+id/gesture_10"
+                    android:padding="10dp"
+                    android:background="@drawable/rounded_border"
+                    android:foreground="@drawable/image_button_selector"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="400dp"
+                    android:layout_height="290dp"
+                    android:src="@drawable/i_want_drink_water"
+                    android:contentDescription="@string/gesture_10_description"/>
+
+                <TextView
+                    android:id="@+id/want_to_drink_water_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I want to drink water!"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="9dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/emotionsText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emotions:"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:layout_marginTop="9dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageButton
+                    android:id="@+id/gesture_11"
+                    android:padding="10dp"
+                    android:background="@drawable/rounded_border"
+                    android:foreground="@drawable/image_button_selector"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="400dp"
+                    android:layout_height="290dp"
+                    android:src="@drawable/emotions"
+                    android:contentDescription="@string/gesture_11_description"/>
+
+                <TextView
+                    android:id="@+id/emotions_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emotions"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="9dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/timeText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time:"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:layout_marginTop="9dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageButton
+                    android:id="@+id/gesture_12"
+                    android:padding="10dp"
+                    android:background="@drawable/rounded_border"
+                    android:foreground="@drawable/image_button_selector"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="400dp"
+                    android:layout_height="290dp"
+                    android:src="@drawable/time"
+                    android:contentDescription="@string/gesture_12_description"/>
+
+                <TextView
+                    android:id="@+id/time_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="9dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/monthText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Months:"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:layout_marginTop="9dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageButton
+                    android:id="@+id/gesture_13"
+                    android:padding="10dp"
+                    android:background="@drawable/rounded_border"
+                    android:foreground="@drawable/image_button_selector"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="400dp"
+                    android:layout_height="290dp"
+                    android:src="@drawable/months"
+                    android:contentDescription="@string/gesture_12_description"/>
+
+                <TextView
+                    android:id="@+id/month_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Months in ASL"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="9dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/familyText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Family:"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:layout_marginTop="9dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageButton
+                    android:id="@+id/gesture_14"
+                    android:padding="10dp"
+                    android:background="@drawable/rounded_border"
+                    android:foreground="@drawable/image_button_selector"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="400dp"
+                    android:layout_height="290dp"
+                    android:src="@drawable/family"
+                    android:contentDescription="@string/gesture_12_description"/>
+
+                <TextView
+                    android:id="@+id/family_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Family Signs in ASL"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginTop="9dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
